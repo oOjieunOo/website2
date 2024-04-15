@@ -1,0 +1,43 @@
+
+
+body{background-color:gainsboro;
+    align-self: center;
+
+}
+
+h1{text-align: center;}
+
+
+
+
+p{ 
+ 
+border-bottom-style: solid;
+margin: 0px;
+padding: 30px;
+border-bottom-width:2px;
+border-bottom-style:dashed;
+border-color: rgb(0, 0, 0);
+
+
+}
+ #grid {display :grid;
+grid-template-columns: 150px 1fr;}
+
+@media (max-width:1080px)
+
+
+   { #grid {display:block; }p{border-bottom-width: 10px; border-bottom-style: double;
+    border-bottom-color: rgb(94, 90, 58);
+    display: grid; grid-template-columns: 500px;
+
+}}
+
+@media (max-width :768px)
+{#grid {display: block;background-color: rgb(110, 170, 239);}p{border-bottom : none;}body{background-color: rgb(63, 92, 117);}}
+
+
+
+@media (max-width:600px)
+{#grid {display:block; background-color:rgb(220, 220, 186) ;}p{border-bottom:none;
+font-size:50px;}#gg {font-size:40px;}body{background-color: rgb(92, 158, 120);}}
